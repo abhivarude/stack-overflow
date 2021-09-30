@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import {BrowserRouter as Router, Route, Link, Switch,Redirect} from 'react-router-dom';
-import './App.css';
+
 import Home from './Component/Home'
 import About from './Component/About'
 import UserDash from './Component/UserDash'
