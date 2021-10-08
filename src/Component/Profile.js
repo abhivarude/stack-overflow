@@ -1,6 +1,8 @@
 import React,{useState,useEffect,useRef} from 'react';
+import "./Home.css"
 import axios from 'axios';
 import {Link} from 'react-router-dom';
+import Sidenav from './Sidenav';
 
 export default function Profile(props){
     const [userData,setData] = useState([]);
@@ -34,13 +36,16 @@ export default function Profile(props){
             <>  
                  
                  <div className="ml-5" >
-                 <div className="row">    
-                 <img className="img-thumbnail" width="300px" height="259px" src={userData[0].profilePic}/>
-                 <div className=" col-sm-10 col-lg-6" style={{}}>
-                 <h1  style={{fontWeight:"bolder"}}>{userData[0].name}</h1>
-                 <h4 className="mt-4" >{userProfile[0].title}</h4>
-                 <h4 className="mt-4" >{userProfile[0].aboutMe}</h4>
-                 </div>
+                 <img className="img" width="300px" height="259px" src={userData[0].profilePic}/>
+                 <div className="allshift">
+                 <div className="row">   
+
+                
+                                  <div className=" col-sm-10 col-lg-6" style={{}}>
+                                  <h1  style={{fontWeight:"bolder"}}>{userData[0].name}</h1>
+                                  <h4 className="mt-4" >{userProfile[0].title}</h4>
+                                  <h4 className="mt-4" >{userProfile[0].aboutMe}</h4>
+                                  </div>
 
                  <div className="col-sm-2 col-lg-3 " style={{position:"abosolute", right:"0px"}}>
                  <div className="row">
@@ -62,7 +67,7 @@ export default function Profile(props){
                  </div>
                  </div>
                  </div>
-
+               
                  <div className="mt-4">
                    <h4 style={{fontWeight:"bold"}}>Tags:</h4>
                    {
@@ -89,7 +94,7 @@ export default function Profile(props){
                      }
                  </div>   
                  </div>
-
+                 </div>
                  </div>
                  </div>  
                  
@@ -99,5 +104,7 @@ export default function Profile(props){
                  <span class="sr-only">Loading...</span></div>
                 } 
         </div>  
+
+        
     )
 }

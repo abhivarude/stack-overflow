@@ -3,3 +3,31 @@
 .fontU{     
     font-family: 'Oswald', sans-serif;
 }
+
+.img{
+
+    padding: 30px;
+    margin-left: 5%;
+}
+
+.allshift{
+
+ 
+    padding-left: 150px;
+}
+
+.sidenav{
+
+    padding: 30px;
+    margin-left: 20px;
+}
+
+.btnbtn-link{
+
+    font-size: 20px;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 200px;
+}

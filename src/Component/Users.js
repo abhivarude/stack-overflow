@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import NavElement from './NavElement';
 import axios from 'axios';
 import Sidenav from './Sidenav';
-
+import "./Home.css"
 export default function Users(){
     const [users,setUsers] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -32,7 +32,7 @@ export default function Users(){
                            <div className="col-6 col-xl-4 mt-3">
                              <div className="row">
                                 
-                              <img className="img-thumbnail " src={e.profilePic}/> 
+                              <img className="thumbnail "src={e.profilePic} /> 
                               <div className="ml-2">
                               <Link  to={"/users/"+e.userId}><h4>{e.name}</h4> </Link>
                               

@@ -99,7 +99,7 @@ export default function UserDash(){
         <div >
           <NavElement/> 
            <div className="row">
-               <Sidenav/>                 
+               <Sidenav></Sidenav>                 
              <div className="col-9 col-lg-10">
                   <div className="m-4 m-lg-5">
                  <span ref={profileRef}  className="nav2 rounded-pill p-3"  onClick={()=>set(1)} >Profile</span> 
